@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.vscode/settings.json
+Exports/*.docx
+Exports/*.epub
+Exports/*.pdf
+Exports/*.html
+Exports/*.rtf
+Exports/*.odt
+*.tmp
+*.bak
