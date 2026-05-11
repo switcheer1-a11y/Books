@@ -22,6 +22,21 @@ A markdown-first nonfiction book-writing repository optimized for VS Code, Git, 
 - `Progress.md`
 - `Ideas.md`
 
+
+## Current Project
+
+**You’re Not a Fraud**  
+*A Developer’s Guide to Imposter Syndrome, Burnout, and the Fear of Falling Behind*
+
+This repository is currently organized around a short Kindle-style guide for developers who feel behind, overthink mistakes, and worry that they will be exposed as less capable than they seem.
+
+Primary planning files:
+- `Book-Overview.md`
+- `Outline.md`
+- `Ideas.md`
+- `Notes/Positioning-Notes.md`
+- `Summaries/Book-Pitch-Summary.md`
+
 ## Recommended Workflow
 
 1. Capture concepts in `Ideas.md` and `Notes/`.

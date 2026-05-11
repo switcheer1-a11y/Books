@@ -1,29 +1,50 @@
 # Book Overview
 
 ## Working Title
-Your Book Title
+You’re Not a Fraud
+
+## Subtitle
+A Developer’s Guide to Imposter Syndrome, Burnout, and the Fear of Falling Behind
 
 ## Purpose
-Describe what the book helps readers understand, do, or change.
+Explain why capable developers so often feel behind, exposed, and mentally exhausted, then provide a rational recovery system built around evidence, accurate thinking, and sustainable confidence.
 
 ## Intended Audience
-Describe the primary reader and the level of prior knowledge they bring.
+Developers who constantly compare themselves, feel behind despite experience, overthink mistakes, assume everyone else understands more, and secretly fear being exposed as less capable than they appear.
 
 ## Core Promise
-State the main transformation or outcome the reader should expect.
+This book will help developers understand why imposter syndrome shows up so strongly in software work, why burnout and overthinking reinforce it, and how to build calmer, more accurate self-trust without motivational fluff.
+
+## Market Positioning
+This is not generic self-help.
+
+It is a professional mental performance guide for developers.
+
+It offers explanation, validation, relief, and clarity rather than daily journaling or forced positivity.
 
 ## Key Themes
-- Theme 1
-- Theme 2
-- Theme 3
+- Hidden complexity makes software feel endless and destabilizing.
+- Awareness of what you do not know often grows with competence.
+- Burnout, comparison, and perfectionism distort self-perception.
+- Confidence should come from evidence and operating ability, not mood.
+- Healthy developers function through uncertainty instead of collapsing under it.
 
 ## Voice and Style
-- Clear
-- Practical
-- Evidence-based
-- Conversational
+- Calm
+- Rational
+- Grounded
+- Developer-native
+- Reassuring without hype
+- Kindle-friendly with short paragraphs and visual blocks
 
 ## Success Criteria
-- The book stays focused on one central argument.
-- Each chapter advances the reader toward the core promise.
-- Research, sources, and revisions remain easy to track in Git.
+- The reader feels emotionally recognized within the opening pages.
+- Each chapter explains a real mental pattern common in software work.
+- The tone stays practical and validating instead of therapeutic or motivational.
+- The book remains compact, fast-reading, and high-retention.
+- The final message feels steady and relieving rather than dramatic.
+
+## Target Length
+- 18,000 to 30,000 words
+- Short, dense Kindle guide
+- Optimized for quick reading and strong re-read value
