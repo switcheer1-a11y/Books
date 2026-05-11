@@ -4,12 +4,12 @@
 - Total chapter files: 11
 - Completed chapters: 0
 - Draft chapters: 11
-- Total tracked words: 2120
+- Total tracked words: 4040
 
 ## Chapter Tracker
 
 <!-- AUTO-CHAPTER-LIST:START -->
-- [ ] Chapter 1 — Why So Many Developers Feel Like Frauds (`Drafts/01-why-so-many-developers-feel-like-frauds.md`) — status: draft — revision: outline — words: 231
+- [ ] Chapter 1 — Why So Many Developers Feel Like Frauds (`Drafts/01-why-so-many-developers-feel-like-frauds.md`) — status: draft — revision: draft — words: 2151
 - [ ] Chapter 2 — The Industry That Never Feels Finished (`Drafts/02-the-industry-that-never-feels-finished.md`) — status: draft — revision: outline — words: 213
 - [ ] Chapter 3 — The Senior Developer Illusion (`Drafts/03-the-senior-developer-illusion.md`) — status: draft — revision: outline — words: 195
 - [ ] Chapter 4 — The Cognitive Bugs Behind Imposter Syndrome (`Drafts/04-the-cognitive-bugs-behind-imposter-syndrome.md`) — status: draft — revision: outline — words: 200
