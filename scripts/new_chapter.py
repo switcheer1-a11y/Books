@@ -37,7 +37,6 @@ def main() -> int:
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
     content = template.replace("Chapter Title", title, 2)
     content = content.replace("chapter_number: 0", f"chapter_number: {number}", 1)
-    content = content.replace("word_count: 0", "word_count: 0", 1)
     content = content.replace("summary: One-sentence chapter summary.", f"summary: Draft created on {date.today().isoformat()}.", 1)
 
     destination.write_text(content, encoding="utf-8")

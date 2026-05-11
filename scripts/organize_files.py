@@ -18,6 +18,10 @@ SKIP_DIRECTORIES = {"Chapters", "Research", "Drafts", "References", "Exports", "
 EXPORT_EXTENSIONS = {".pdf", ".docx", ".epub", ".html", ".rtf", ".odt"}
 
 
+def has_numbered_prefix(name: str) -> bool:
+    return len(name) >= 2 and name[:2].isdigit()
+
+
 def choose_destination(path: Path) -> Path | None:
     if path.suffix.lower() in EXPORT_EXTENSIONS:
         return DESTINATIONS["export"]
@@ -28,7 +32,7 @@ def choose_destination(path: Path) -> Path | None:
         if not metadata and not (
             path.name.lower().startswith("research-")
             or path.name.lower().startswith("summary-")
-            or path.name[:2].isdigit()
+            or has_numbered_prefix(path.name)
         ):
             return None
 
@@ -40,7 +44,7 @@ def choose_destination(path: Path) -> Path | None:
         return DESTINATIONS["research"]
     if "summary" in tags or name.startswith("summary-"):
         return DESTINATIONS["summary"]
-    if "chapter" in tags or name[:2].isdigit():
+    if "chapter" in tags or has_numbered_prefix(name):
         return DESTINATIONS["chapter"] if status == "completed" else DESTINATIONS["draft"]
     if status == "completed":
         return DESTINATIONS["chapter"]
