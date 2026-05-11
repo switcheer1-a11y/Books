@@ -23,6 +23,7 @@ def has_numbered_prefix(name: str) -> bool:
 
 
 def choose_destination(path: Path) -> Path | None:
+    name = path.name.lower()
     if path.suffix.lower() in EXPORT_EXTENSIONS:
         return DESTINATIONS["export"]
 
@@ -30,15 +31,14 @@ def choose_destination(path: Path) -> Path | None:
     if path.suffix.lower() == ".md":
         metadata, _ = extract_frontmatter(path)
         if not metadata and not (
-            path.name.lower().startswith("research-")
-            or path.name.lower().startswith("summary-")
-            or has_numbered_prefix(path.name)
+            name.startswith("research-")
+            or name.startswith("summary-")
+            or has_numbered_prefix(name)
         ):
             return None
 
     tags = {str(tag).lower() for tag in metadata.get("tags", [])} if isinstance(metadata.get("tags"), list) else set()
     status = str(metadata.get("status", "")).lower()
-    name = path.name.lower()
 
     if "research" in tags or name.startswith("research-"):
         return DESTINATIONS["research"]

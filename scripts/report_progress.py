@@ -45,7 +45,29 @@ def update_progress() -> None:
             drafts += 1
 
     tracker = "\n".join(lines) if lines else "- [ ] No chapter files yet"
-    updated = f"# Writing Progress\n\n## Snapshot\n- Total chapter files: {len(lines)}\n- Completed chapters: {completed}\n- Draft chapters: {drafts}\n- Total tracked words: {total_words}\n\n## Chapter Tracker\n\n{START_MARKER}\n{tracker}\n{END_MARKER}\n\n## Next Actions\n- Add the next chapter with `python3 scripts/new_chapter.py \"Chapter Title\"`\n- Draft unfinished sections in `Drafts/`\n- Run `python3 scripts/report_progress.py` after structural changes\n"
+    updated = "\n".join(
+        [
+            "# Writing Progress",
+            "",
+            "## Snapshot",
+            f"- Total chapter files: {len(lines)}",
+            f"- Completed chapters: {completed}",
+            f"- Draft chapters: {drafts}",
+            f"- Total tracked words: {total_words}",
+            "",
+            "## Chapter Tracker",
+            "",
+            START_MARKER,
+            tracker,
+            END_MARKER,
+            "",
+            "## Next Actions",
+            '- Add the next chapter with `python3 scripts/new_chapter.py "Chapter Title"`',
+            "- Draft unfinished sections in `Drafts/`",
+            "- Run `python3 scripts/report_progress.py` after structural changes",
+            "",
+        ]
+    )
     PROGRESS_PATH.write_text(updated, encoding="utf-8")
     print(f"Updated {PROGRESS_PATH.relative_to(ROOT)}")
 

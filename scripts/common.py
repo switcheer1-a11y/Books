@@ -30,7 +30,10 @@ def extract_frontmatter(path: Path) -> Tuple[Dict[str, object], str]:
         if not line.strip():
             continue
         if line.startswith("  - ") and current_list_key:
-            data.setdefault(current_list_key, []).append(line[4:].strip())
+            existing = data.get(current_list_key)
+            if not isinstance(existing, list):
+                data[current_list_key] = [] if existing in (None, "") else [str(existing)]
+            data[current_list_key].append(line[4:].strip())
             continue
         if ":" not in line:
             continue
